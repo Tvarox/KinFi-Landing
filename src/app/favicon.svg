@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <style>
+    :root {
+      --mark: #131416;
+      --accent: #E8803A;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --mark: #F5F5F6;
+        --accent: #FFA15A;
+      }
+    }
+  </style>
+  <rect x="24" y="16" width="20" height="88" rx="10" fill="var(--mark)"/>
+  <path d="M50 70 L86 26" stroke="var(--mark)" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="82" cy="86" r="16" fill="var(--accent)"/>
+</svg>
