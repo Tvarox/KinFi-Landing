@@ -23,8 +23,7 @@ export default function HowItWorks() {
               Simple on the surface, careful underneath.
             </h2>
             <p className="mt-4 sm:mt-5 text-base leading-relaxed text-gray-300 sm:text-lg">
-              From sign-in to a funded balance takes one calm flow — no jargon,
-              no assumptions.
+              From sign-in to a funded balance takes one flow —<br className="hidden lg:inline" /> no jargon, no assumptions.
             </p>
           </div>
 

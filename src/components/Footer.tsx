@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Only "X" logo */}
         <div className="flex items-center justify-center">
           <a
-            href="https://x.com"
+            href="https://x.com/kenfidotapp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X (formerly Twitter)"
@@ -22,12 +22,12 @@ export default function Footer() {
         </div>
 
         {/* Disclaimer */}
-        <p className="mt-8 mx-auto max-w-2xl text-xs sm:text-sm leading-relaxed text-gray-500">
+        {/* <p className="mt-8 mx-auto max-w-2xl text-xs sm:text-sm leading-relaxed text-gray-500">
           Kinfi documentation is a concise build-ready baseline and is not a
           legal opinion, security audit, investment recommendation or guarantee
           of provider eligibility. Verify current documentation, pricing and
           protocol conditions before implementation and launch.
-        </p>
+        </p> */}
 
         {/* Copyright */}
         <p className="mt-6 text-xs sm:text-sm text-gray-500">

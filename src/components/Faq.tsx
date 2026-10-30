@@ -4,24 +4,34 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Is the yield guaranteed?",
+    question: "What happens to my money when I turn on Auto-Earn?",
     answer:
-      "No. Kinfi never implies that yield is guaranteed. Earning strategies are not bank deposits and are not insured; they can lose value or become temporarily illiquid. Any displayed figure is sourced, timestamped and may be variable or estimated.",
+      "You choose how much USDC goes towards earning. The rest stays spendable, including your minimum balance.",
   },
   {
-    question: "What happens if a transaction fails?",
+    question: "Can Kinfi move my money without my approval?",
     answer:
-      "The app shows clear pending, success or failed states and never displays success before chain confirmation. Failed transactions are not listed in activity as completed, and retries are handled safely.",
+      "No. Auto-Earn is off by default, and every transfer needs your approval. You can pause it or withdraw funds anytime, subject to availability.",
   },
   {
-    question: "Which network and USDC does Kinfi use?",
+    question: "Where does the yield come from?",
     answer:
-      "Kinfi operates on Solana, and the official USDC mint address, token decimals and network are verified on every environment. The token symbol alone is never trusted.",
+      "Your funds go into a lending protocol. Kinfi shows the rate, its source and timestamp. Rates can change, and returns aren't guaranteed.",
   },
   {
-    question: "Who controls the funds?",
+    question: "What if I need money that's currently earning?",
     answer:
-      "Users control their Solana wallet keys through the embedded wallet. Transaction signing authority is separated from backend orchestration and constrained per action.",
+      "Request a withdrawal to move funds back to your spendable balance. Availability depends on the lending protocol.",
+  },
+  {
+    question: "How do I know my balance is accurate?",
+    answer:
+      "Kinfi checks balances against the Solana blockchain. Transactions are marked complete only after on-chain confirmation.",
+  },
+  {
+    question: "Can I use Kinfi to pay international contractors?",
+    answer:
+      "That's coming in a future version. Planned features include payment links, invoices, recurring transfers and team payouts.",
   },
 ];
 
@@ -32,17 +42,17 @@ export default function Faq() {
     setOpen((prev) => ({ ...prev, [i]: !prev[i] }));
 
   return (
-    <section id="faq" className="scroll-mt-16 py-14 sm:py-20 md:py-24 lg:pt-20 lg:pb-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-16">
+    <section id="faq" className="scroll-mt-16 py-14 sm:py-20 md:py-24 lg:pt-10 lg:pb-28">
+      <div className="mx-auto max-w-6xl lg:max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 sm:gap-10 md:gap-12 lg:grid-cols-[1fr_2fr] lg:gap-20 xl:gap-24">
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">
+            {/* <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-widest text-accent">
               FAQ
-            </p>
-            <h2 className="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold tracking-tight text-white">
-              Questions, answered plainly.
+            </p> */}
+            <h2 className="mt-3 sm:mt-5 text-[2.5rem] sm:text-[3.35rem] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-accent leading-[1.06] sm:leading-[1.04] md:leading-[1.03] lg:leading-[1.02]">
+              FAQ
             </h2>
-            <p className="mt-3 sm:mt-6 text-base sm:text-lg leading-relaxed text-gray-300">
+            <p className="mt-4 sm:mt-5 max-w-xl text-base leading-relaxed text-gray-300 sm:text-lg">
               Everything you need to know before you hold, send or allocate your
               USDC on Solana.
             </p>
@@ -52,7 +62,7 @@ export default function Faq() {
             {faqs.map((faq, i) => {
               const isOpen = !!open[i];
               return (
-                <div key={faq.question} className="p-5 sm:p-6 md:p-8 lg:p-8">
+                <div key={faq.question} className="p-4 sm:p-5 md:p-5 lg:p-5">
                   <button
                     type="button"
                     onClick={() => toggle(i)}
@@ -61,20 +71,18 @@ export default function Faq() {
                   >
                     <span>{faq.question}</span>
                     <span
-                      className={`text-xl sm:text-2xl text-accent transition-transform duration-300 ${
-                        isOpen ? "rotate-45" : ""
-                      }`}
+                      className={`text-xl sm:text-2xl text-accent transition-transform duration-300 ${isOpen ? "rotate-45" : ""
+                        }`}
                     >
                       +
                     </span>
                   </button>
                   <div
-                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${
-                      isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                    }`}
+                    className={`grid transition-[grid-template-rows] duration-300 ease-out ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                      }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-gray-300">
+                      <p className="mt-2.5 sm:mt-3 text-sm sm:text-base leading-relaxed text-gray-300">
                         {faq.answer}
                       </p>
                     </div>
