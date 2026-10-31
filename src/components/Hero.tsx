@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 sm:mt-6 max-w-xl text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl lg:text-xl">
-            Kinfi helps you hold, send and receive USDC on Solana, then choose
+            Kenfi helps you hold, send and receive USDC on Solana, then choose
             how much eligible balance to allocate to a clearly disclosed
             earning strategy.
           </p>

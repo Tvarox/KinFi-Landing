@@ -43,8 +43,25 @@ html::-webkit-scrollbar {
 }
 
 body {
-  @apply bg-primary text-white antialiased;
+  @apply bg-primary text-white antialiased select-none;
   font-family: 'Cinzel', serif;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+/* Prevent text cursor shape and highlighting across all text elements */
+*, *::before, *::after {
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+/* Retain pointer cursor for interactive controls only */
+a,
+button,
+[role="button"] {
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +69,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  @apply bg-accent text-primary;
+  background: transparent;
+  color: inherit;
 }
 
 /* Soft, blurred borders that fade away instead of crisp 1px lines */

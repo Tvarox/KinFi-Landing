@@ -9,14 +9,14 @@ const faqs = [
       "You choose how much USDC goes towards earning. The rest stays spendable, including your minimum balance.",
   },
   {
-    question: "Can Kinfi move my money without my approval?",
+    question: "Can Kenfi move my money without my approval?",
     answer:
       "No. Auto-Earn is off by default, and every transfer needs your approval. You can pause it or withdraw funds anytime, subject to availability.",
   },
   {
     question: "Where does the yield come from?",
     answer:
-      "Your funds go into a lending protocol. Kinfi shows the rate, its source and timestamp. Rates can change, and returns aren't guaranteed.",
+      "Your funds go into a lending protocol. Kenfi shows the rate, its source and timestamp. Rates can change, and returns aren't guaranteed.",
   },
   {
     question: "What if I need money that's currently earning?",
@@ -26,10 +26,10 @@ const faqs = [
   {
     question: "How do I know my balance is accurate?",
     answer:
-      "Kinfi checks balances against the Solana blockchain. Transactions are marked complete only after on-chain confirmation.",
+      "Kenfi checks balances against the Solana blockchain. Transactions are marked complete only after on-chain confirmation.",
   },
   {
-    question: "Can I use Kinfi to pay international contractors?",
+    question: "Can I use Kenfi to pay international contractors?",
     answer:
       "That's coming in a future version. Planned features include payment links, invoices, recurring transfers and team payouts.",
   },

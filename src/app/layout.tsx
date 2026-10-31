@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kinfi — Calm USDC on Solana",
+  title: "Kenfi — Calm USDC on Solana",
   description:
-    "Kinfi helps you hold, send and receive USDC on Solana, then choose how much eligible balance to allocate to a clearly disclosed earning strategy.",
+    "Kenfi helps you hold, send and receive USDC on Solana, then choose how much eligible balance to allocate to a clearly disclosed earning strategy.",
   icons: {
     icon: [
       {

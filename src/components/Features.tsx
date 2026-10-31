@@ -91,7 +91,7 @@ export default function Features() {
             const bodyDelay = `${index * 160 + 130}ms`;
 
             return (
-              <div key={feature.title} className="group flex flex-col cursor-pointer">
+              <div key={feature.title} className="group flex flex-col cursor-default">
                 <h3
                   className="font-heading text-2xl sm:text-3xl lg:text-[1.75rem] xl:text-3xl font-bold tracking-tight text-white transition-all duration-700 ease-out group-hover:text-accent group-hover:duration-300"
                   style={{

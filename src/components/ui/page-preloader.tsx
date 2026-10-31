@@ -49,7 +49,7 @@ function generateDeterministicOrder(total: number, seed = 42): number[] {
 
 export function PagePreloader({
   variant = "pixel",
-  columns = 10,
+  columns = 12,
   rows = 10,
   holdDuration = 350,
   staggerDuration = 950,

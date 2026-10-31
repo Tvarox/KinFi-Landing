@@ -11,7 +11,7 @@ const disclosures = [
   },
   {
     title: "Keep money ready to spend",
-    body: "Set a minimum balance that Kinfi won't move into earning.",
+    body: "Set a minimum balance that Kenfi won't move into earning.",
   },
   {
     title: "Stay in control",

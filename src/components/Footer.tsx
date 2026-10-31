@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* Disclaimer */}
         {/* <p className="mt-8 mx-auto max-w-2xl text-xs sm:text-sm leading-relaxed text-gray-500">
-          Kinfi documentation is a concise build-ready baseline and is not a
+          Kenfi documentation is a concise build-ready baseline and is not a
           legal opinion, security audit, investment recommendation or guarantee
           of provider eligibility. Verify current documentation, pricing and
           protocol conditions before implementation and launch.
@@ -42,7 +42,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="mt-6 text-xs sm:text-sm text-gray-500">
-          © {new Date().getFullYear()} Kinfi. All rights reserved.
+          © {new Date().getFullYear()} Kenfi. All rights reserved.
         </p>
       </div>
     </footer>
