@@ -15,11 +15,11 @@ export default function Nav() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50 bg-transparent">
-      <nav className="relative z-10 mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <nav className="relative z-10 mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 md:px-8 lg:px-6">
         <a
           href="#top"
           aria-label="Kenfi"
-          className="flex items-center transition-opacity hover:opacity-90 -translate-x-1 sm:-translate-x-2 md:-translate-x-4 lg:-translate-x-6"
+          className="flex items-center transition-opacity hover:opacity-90 -translate-x-1 sm:-translate-x-2 md:translate-x-0 lg:-translate-x-16 xl:-translate-x-20 2xl:-translate-x-24"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

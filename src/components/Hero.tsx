@@ -17,13 +17,9 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 md:px-8 lg:px-6">
-        <div className="max-w-2xl md:max-w-2xl lg:max-w-3xl md:translate-x-0 lg:-translate-x-12">
-          {/* <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-widest text-gray-300">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            USDC on Solana
-          </span> */}
+        <div className="max-w-2xl md:max-w-2xl lg:max-w-3xl translate-x-0 md:translate-x-0 lg:-translate-x-16 xl:-translate-x-20 2xl:-translate-x-24">
 
-          <h1 className="mt-6 text-[3.35rem] sm:text-[4.5rem] md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight text-white leading-[1.02] sm:leading-[1.01] md:leading-[0.98] lg:leading-[0.96]">
+          <h1 className="mt-6 text-[3.35rem] sm:text-[4.5rem] md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold tracking-tight text-white leading-[1.02] sm:leading-[1.01] md:leading-[0.98] lg:leading-[0.96]">
             Calm money for <span className="text-accent">stablecoins</span>
           </h1>
 

@@ -135,12 +135,14 @@ export function PagePreloader({
                 key={index}
                 style={{
                   backgroundColor: tileColor,
+                  outline: `1px solid ${tileColor}`,
+                  boxShadow: `0 0 0 1px ${tileColor}`,
                   transitionProperty: "opacity, transform",
                   transitionDuration: `${tileDuration}ms`,
                   transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
                   transitionDelay: isExiting ? `${delay}ms` : "0ms",
                   opacity: isExiting ? 0 : 1,
-                  transform: isExiting ? "scale(0.96)" : "scale(1.002)",
+                  transform: isExiting ? "scale(0.96)" : "scale(1.01)",
                 }}
                 className="w-full h-full"
               />
