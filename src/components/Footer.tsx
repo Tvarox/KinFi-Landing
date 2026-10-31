@@ -1,7 +1,18 @@
+import { DotGrid } from "@/components/ui/dot-grid";
+
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 py-12 sm:py-16">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 text-center">
+    <footer className="relative overflow-hidden border-t border-white/5 py-14 sm:py-18">
+      {/* Background: Subtle DotGrid matrix */}
+      <DotGrid
+        dotSize={1}
+        gap={24}
+        color="rgba(255, 255, 255, 0.08)"
+        animate={true}
+        fade={true}
+      />
+
+      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 text-center">
         {/* Only "X" logo */}
         <div className="flex items-center justify-center">
           <a

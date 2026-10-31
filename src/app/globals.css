@@ -92,3 +92,71 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(0.8px);
   pointer-events: none;
 }
+
+/* ShimmerButton sweep animation on hover */
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmer-sweep 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Aurora background animations */
+@keyframes aurora-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(20%, 12%) scale(1.15);
+  }
+}
+
+@keyframes aurora-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-18%, -15%) scale(1.1);
+  }
+}
+
+@keyframes aurora-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1.05);
+  }
+  50% {
+    transform: translate(12%, -18%) scale(0.92);
+  }
+}
+
+.animate-aurora-1 {
+  animation: aurora-1 10s ease-in-out infinite;
+}
+
+.animate-aurora-2 {
+  animation: aurora-2 13s ease-in-out infinite;
+}
+
+.animate-aurora-3 {
+  animation: aurora-3 16s ease-in-out infinite;
+}
+
+/* DotGrid drift animation */
+@keyframes dot-drift {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(24px, 24px);
+  }
+}
+
+.animate-dot-drift {
+  animation: dot-drift 20s linear infinite;
+}

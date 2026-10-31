@@ -1,3 +1,5 @@
+import { ShimmerButton } from "@/components/ui/shimmer-button";
+
 export default function Hero() {
   return (
     <section className="relative min-h-[100dvh] overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-24 lg:pt-28 lg:pb-24">
@@ -38,12 +40,14 @@ export default function Hero() {
             >
               Open your wallet
             </a> */}
-            <a
+            <ShimmerButton
               href="#how-it-works"
-              className="inline-flex w-[50vw] sm:w-[50vw] md:w-auto lg:w-auto min-w-fit items-center justify-center rounded-full border border-white/15 px-5 py-3.5 sm:px-7 sm:py-4 md:px-8 md:py-4 text-sm sm:text-base md:text-lg lg:text-lg font-bold tracking-wide text-white transition-colors hover:bg-white/5 whitespace-nowrap"
+              shimmerColor="rgba(255, 161, 90, 0.35)"
+              duration={1.5}
+              className="w-[50vw] sm:w-[50vw] md:w-auto lg:w-auto min-w-fit rounded-full border border-white/15 px-5 py-3.5 sm:px-7 sm:py-4 md:px-8 md:py-4 lg:px-6 lg:py-3 text-sm sm:text-base md:text-lg lg:text-base font-bold tracking-wide text-white whitespace-nowrap transition-colors duration-300 hover:border-accent/40"
             >
               See how it works
-            </a>
+            </ShimmerButton>
           </div>
 
           <p className="mt-6 text-xs sm:text-sm text-gray-400">

@@ -6,10 +6,12 @@ import Earning from "@/components/Earning";
 import Safety from "@/components/Safety";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
+import { PagePreloader } from "@/components/ui/page-preloader";
 
 export default function Home() {
   return (
     <main className="relative overflow-x-hidden">
+      <PagePreloader />
       <Nav />
       <Hero />
       <HowItWorks />

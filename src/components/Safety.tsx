@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MorphingText } from "@/components/ui/morphing-text";
+import { TextReveal } from "@/components/ui/text-reveal";
 
 const commitments = [
   "Show accurate balances, with clear sources and last-refresh information.",
@@ -18,9 +19,11 @@ export default function Safety() {
             <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-widest text-accent">
               Safety
             </p>
-            <h2 className="mt-3 sm:mt-5 text-[2.5rem] sm:text-[3.35rem] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.06] sm:leading-[1.04] md:leading-[1.03] lg:leading-[1.02]">
-              Trust before features.
-            </h2>
+            <TextReveal
+              as="h2"
+              text="Trust before features."
+              className="mt-3 sm:mt-5 text-[2.5rem] sm:text-[3.35rem] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.06] sm:leading-[1.04] md:leading-[1.03] lg:leading-[1.02]"
+            />
             <p className="mt-4 sm:mt-5 max-w-xl text-base leading-relaxed text-gray-300 sm:text-lg">
               Before adding capability, we hold ourselves to a floor of honesty:
               balances must be accurate, transactions explained, and risks made

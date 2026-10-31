@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { TextReveal } from "@/components/ui/text-reveal";
 
 const features = [
   {
@@ -56,9 +57,11 @@ export default function Features() {
             <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-widest text-accent">
               The product
             </p>
-            <h2 className="mt-3 sm:mt-4 text-[2.5rem] sm:text-[3.35rem] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.06] sm:leading-[1.04] md:leading-[1.03] lg:leading-[1.02]">
-              Everything you need to hold, send and receive USDC.
-            </h2>
+            <TextReveal
+              as="h2"
+              text="Everything you need to hold, send and receive USDC."
+              className="mt-3 sm:mt-4 text-[2.5rem] sm:text-[3.35rem] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.06] sm:leading-[1.04] md:leading-[1.03] lg:leading-[1.02]"
+            />
             <p className="mt-3 sm:mt-4 max-w-xl text-base leading-relaxed text-gray-300 sm:text-lg">
               Calm infrastructure around the money people already hold with
               transaction states that tell the truth.
